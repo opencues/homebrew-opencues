@@ -3,8 +3,8 @@ require "language/node"
 class Opencues < Formula
   desc "AI anywhere you type - inline agents and prompting (just type _)"
   homepage "https://opencues.com"
-  url "https://registry.npmjs.org/opencues/-/opencues-0.7.5.tgz"
-  sha256 "3c9a325cbd76cd102c813ba2205c10a6bc475513272aaff6a61c8e49b7e6408e"
+  url "https://registry.npmjs.org/opencues/-/opencues-0.7.7.tgz"
+  sha256 "0aa931109fff9a2b64021803b241456feea35052ae3e696c50209d75ad833631"
   license "Apache-2.0"
 
   depends_on "node"
@@ -27,6 +27,6 @@ class Opencues < Formula
   end
 
   test do
-    assert_match "0.7.5", shell_output("#{bin}/opencues --version")
+    assert_match "0.7.7", shell_output("#{bin}/opencues --version")
   end
 end
